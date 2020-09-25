@@ -6,9 +6,9 @@ import React from 'react';
 import LogoLockup from 'fxa-react/components/LogoLockup';
 import Header from 'fxa-react/components/Header';
 import LinkExternal from 'fxa-react/components/LinkExternal';
+import BentoMenu from '../BentoMenu';
 import DropDownAvatarMenu from '../DropDownAvatarMenu';
 import { ReactComponent as Help } from './help.svg';
-import { ReactComponent as Bento } from './bento.svg';
 import { ReactComponent as Menu } from './menu.svg';
 
 export const HeaderLockup = () => {
@@ -51,12 +51,7 @@ export const HeaderLockup = () => {
           data-testid="header-help"
         />
       </LinkExternal>
-      <Bento
-        aria-label="Firefox Account Menu"
-        role="img"
-        className="w-6 mx-6 desktop:mx-8"
-        data-testid="header-bento"
-      />
+      <BentoMenu />
       <DropDownAvatarMenu />
     </>
   );
